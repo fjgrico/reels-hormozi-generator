@@ -1,6 +1,7 @@
 import openai
 
-openai.api_key = 'TU_API_KEY'
+import streamlit as st
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 def generar_guion(datos_usuario):
     prompt = f"""
